@@ -68,7 +68,7 @@ body {
   visibility: hidden;
 }
 
-.none {
+.list-default-style-disabled {
   list-style-type: none;
 }
 
@@ -156,7 +156,7 @@ body {
   display: none;
 }
 
-.main-tytle {
+.main-title {
   font-size: 36px;
   line-height: 46px;
   font-weight: 800;
@@ -265,7 +265,7 @@ body {
   height: 24px;
 }
 
-.second-tytle {
+.second-title {
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
@@ -289,17 +289,33 @@ body {
 .gifts-item {
   background-color: #FF7799;
   border-radius: 16px;
-  padding: 36px 218px 36px 36px;
+  padding: 36px 218px 0 36px;
 }
 
-.third-tytle {
+.first-gift {
+  background-image: url(/images/raspberry.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.second-gift {
+  background-image: url(/images/marshmellow.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.button-gifts {
+  margin-bottom: 30px;
+}
+
+.third-title {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   margin: 0 0 28px 0;
 }
 
-.news-tytle-text {
+.news-title-text {
   margin: 0;
 }
 
@@ -322,7 +338,7 @@ body {
   margin: 0 0 80px 0;
 }
 
-.fourth-tytle {
+.fourth-title {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -351,6 +367,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.pink-circle-button {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: #FF2F64;
+  border: none;
 }
 
 .shop {
@@ -384,7 +408,7 @@ body {
   margin-bottom: 80px;
 }
 
-.news-tytle {
+.news-title {
   background-color: #FFFFFF;
   border-radius: 16px;
   padding: 32px 0 67px 32px;
@@ -445,7 +469,7 @@ body {
   padding: 64px 64px 64px 100px;
 }
 
-.second-tytle-text {
+.second-title-text {
   text-align: left;
   margin-bottom: 24px;
 }
@@ -523,7 +547,7 @@ body {
   padding: 40px 0 40px 40px;
 }
 
-.fourth-tytle-text {
+.fourth-title-text {
   text-align: left;
   margin: 0;
 }
