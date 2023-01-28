@@ -92,7 +92,13 @@ body {
 }
 
 .catalog {
-  margin-right: 22px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.catalog-arrow {
+  margin-left: 6px;
 }
 
 .navigation-right {
@@ -120,6 +126,38 @@ body {
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
+}
+
+.navigation-right-menu:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.navigation-right-menu:active {
+  background-color: #FCFCFC;
+}
+
+.navigation-right-menu:focus-visible {
+  border: 2px solid #000000;
+  outline: none;
+}
+
+.navigation-left-link:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+  padding: 8px 16px;
+  border-radius: 30px;
+}
+
+.navigation-left-link:active {
+  background-color: #FCFCFC;
+  padding: 8px 16px;
+  border-radius: 30px;
+}
+
+.navigation-left-link:focus-visible {
+  padding: 8px 16px;
+  border-radius: 30px;
+  border: 2px solid #000000;
+  outline: none;
 }
 
 .navigation-right-menu {
@@ -215,6 +253,32 @@ body {
   border: 4px solid rgba(252, 252, 252, 0.4);
   box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
   cursor: pointer;
+  background-clip: padding-box;
+}
+
+.white-button:hover {
+  background-color: rgba(252, 252, 252, 0.4);
+  border: 4px solid #FCFCFC;
+}
+
+.white-button:active {
+  background-color: #FCFCFC;
+  border: 2px solid #2D3440;
+  padding: 14px 34px;
+}
+
+.white-button:focus {
+  border: 2px solid #2D3440;
+  padding: 14px 34px;
+}
+
+.white-button:focus-visible {
+  outline: none;
+}
+
+.white-button:disabled {
+  background-color: #E7E7E7;
+  border: 4px solid rgba(252, 252, 252, 0.4);
 }
 
 .main-ice-cream {
@@ -223,12 +287,16 @@ body {
 }
 
 .main-screen-arrow {
-  background-color: transparent;
+  fill: rgba(252, 252, 252, 0.3);
+  fill-opacity: 0.3;
   border: none;
   width: 38px;
   height: 38px;
   position: relative;
   right: -14px;
+  color: #FCFCFC;
+  stroke: #FCFCFC;
+  cursor: pointer;
 }
 
 .slider-next {
@@ -271,6 +339,9 @@ body {
 .social-media-list {
   width: 24px;
   height: 24px;
+  background-clip: padding-box;
+  border-radius: 50%;
+  border: 2px solid rgba(252, 252, 252, 0.3);
 }
 
 .second-title {
@@ -438,8 +509,29 @@ body {
   width: 32px;
   border-radius: 50%;
   background-color: #FF2F64;
+  color: #FCFCFC;
   border: none;
   cursor: pointer;
+}
+
+.pink-circle-button:hover {
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FF2F64;
+  color: #000000;
+}
+
+.pink-circle-button:active {
+  background-color: #FFCBD8;
+  border: 2px solid #FF2F64;
+  color: #000000;
+}
+
+.pink-circle-button:focus {
+  border: 2px solid #000000;
+}
+
+.pink-circle-button:focus-visible {
+  outline: none;
 }
 
 .shop {
@@ -561,6 +653,32 @@ body {
   color: #FFFFFF;
   border: 4px solid rgba(255, 47, 100, 0.3);
   cursor: pointer;
+  box-shadow: 0px 4px 12px rgb(45 52 64 / 10%);
+  background-clip: padding-box;
+}
+
+.button-pink:hover {
+  background-color: #FCFCFC;
+  border: 4px solid #FF2F64;
+  color: #000000;
+}
+
+.button-pink:active {
+  background-color: #FEAFC3;
+  border: 2px solid #2D3440;
+}
+
+.button-pink:focus {
+  border: 2px solid #2D3440;
+}
+
+.button-pink:focus-visible {
+  outline: none;
+}
+
+.button-pink:disabled {
+  background-color: #B9B9B9;
+  border: 4px solid rgba(185, 185, 185, 0.3);
 }
 
 .field {
@@ -697,6 +815,14 @@ body {
   gap: 16px;
   padding: 0;
   margin: 0;
+  height: 24px;
+}
+
+.social-list-item {
+  background-clip: padding-box;
+  border-radius: 50%;
+  border: 2px solid rgba(252, 252, 252, 0.3);
+  height: 24px;
 }
 
 .footer-menu {
@@ -714,6 +840,19 @@ body {
 
 .footer-link-bold {
   font-weight: 700;
+  position: absolute;
+}
+
+.footer-link-bold::before {
+  content: "";
+  position: relative;
+  background-image: url(/images/heart.svg);
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 13px;
+  left: 10px;
+  z-index: 2;
+  left: 10px;
 }
 
 .html-logo {
