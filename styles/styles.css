@@ -152,8 +152,6 @@ body {
 }
 
 .icon-search {
-  position: relative;
-  top: 1px;
   padding: 9px;
 }
 
@@ -234,6 +232,7 @@ body {
   padding-top: 21px;
   min-height: 554px;
   margin-bottom: 80px;
+  position: relative;
 }
 
 .main-screen-close {
@@ -412,9 +411,9 @@ body {
   gap: 16px;
   padding: 0;
   margin: 0;
-  position: relative;
-  top: 266px;
-  left: 596px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .social-media-link {
@@ -640,6 +639,7 @@ body {
 .shop {
   background-image: url(/images/waffle.png);
   background-repeat: no-repeat;
+  background-size: cover
   border-radius: 16px;
   padding: 24px;
   margin-bottom: 80px;
@@ -919,7 +919,10 @@ body {
 }
 
 .adress {
-  margin-bottom: 24px;
+  margin: 0 0 24px 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
 }
 
 .contacts-button {
