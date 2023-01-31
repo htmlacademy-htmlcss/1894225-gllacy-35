@@ -875,13 +875,13 @@ body {
   margin: 8px 0 0 0;
 }
 
-.date-field-text, .phone-field-text, .adress-field-text {
+.date-field-text, .phone-field-text, .address-field-text {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
 }
 
-.adress-field {
+.address-field {
   display: flex;
   margin: 8px 0 32px 0;
   width: 420px;
@@ -918,7 +918,7 @@ body {
   margin-bottom: 12px;
 }
 
-.adress {
+.address {
   margin: 0 0 24px 0;
   font-size: 20px;
   font-weight: 700;
