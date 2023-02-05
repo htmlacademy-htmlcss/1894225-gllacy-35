@@ -116,16 +116,6 @@ body {
   outline: none;
 }
 
-.catalog {
-  justify-content: center;
-  display: flex;
-  align-items: center;
-}
-
-.catalog-arrow {
-  margin-left: 6px;
-}
-
 .navigation-right {
   display: flex;
   flex-wrap: wrap;
@@ -195,7 +185,6 @@ body {
   background-color: #FCFCFC;
   padding: 8px 16px;
   border-radius: 30px;
-
 }
 
 .navigation-left-link:focus {
@@ -203,6 +192,43 @@ body {
   border-radius: 30px;
   padding: 8px 16px;
   outline: none;
+}
+
+.catalog:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+  padding: 8px 38px 8px 16px;
+  border-radius: 30px;
+  border: 2px solid transparent;
+}
+
+.catalog:active {
+  background-color: #FCFCFC;
+  padding: 8px 38px 8px 16px;
+  border-radius: 30px;
+}
+
+.catalog:focus {
+  border: 2px solid #2D3440;
+  border-radius: 30px;
+  padding: 8px 38px 8px 16px;
+  outline: none;
+}
+
+.catalog {
+  padding: 8px 38px 8px 16px;
+  position: relative;
+}
+
+.catalog::after {
+  content: "";
+  position: absolute;
+  background-image: url(/images/catalog_arrow.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
+  width: 16px;
+  height: 16px;
+  right: 6px;
+  top: 16px;
 }
 
 .navigation-right-menu {
@@ -307,12 +333,13 @@ body {
   line-height: 20px;
   font-weight: 700;
   border-radius: 26px;
-  padding: 12px 32px;
+  padding: 0 32px;
   background-color: #FCFCFC;
   border: 4px solid rgba(252, 252, 252, 0.4);
   box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
   cursor: pointer;
   background-clip: padding-box;
+  height: 50px;
 }
 
 .white-button:hover {
@@ -323,12 +350,12 @@ body {
 .white-button:active {
   background-color: #FCFCFC;
   border: 2px solid #2D3440;
-  padding: 14px 34px;
+  padding: 0 34px;
 }
 
 .white-button:focus {
   border: 2px solid #2D3440;
-  padding: 14px 34px;
+  padding: 0 34px;
 }
 
 .white-button:focus-visible {
@@ -355,7 +382,10 @@ body {
   position: relative;
   right: -16px;
   cursor: pointer;
-  padding: 11px;
+  padding-left: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slider-next {
@@ -543,14 +573,17 @@ body {
   margin-bottom: 107px;
 }
 
-.icecream-card-first, .icecream-card-second, .icecream-card-third, .icecream-card-fifth {
+.icecream-card-first, .icecream-card-second, .icecream-card-third, .icecream-card-fourth,
+.icecream-card-fifth, .icecream-card-sixth, .icecream-card-sixth, .icecream-card-seventh,
+.icecream-card-eigth, .icecream-card-ninth, .icecream-card-tenth, .icecream-card-eleventh,
+.icecream-card-twelfth {
   position: relative;
 }
 
 .icecream-card-first::before {
   position: absolute;
   content: "";
-  background-image: url(/images/try_ice_cream1.png);
+  background-image: url(../images/try_ice_cream1.png);
   background-repeat: no-repeat;
   height: 168px;
   width: 168px;
@@ -562,7 +595,7 @@ body {
 .icecream-card-second::before {
   position: absolute;
   content: "";
-  background-image: url(/images/try_ice_cream2.png);
+  background-image: url(../images/try_ice_cream2.png);
   background-repeat: no-repeat;
   height: 168px;
   width: 168px;
@@ -574,7 +607,7 @@ body {
 .icecream-card-third::before {
   position: absolute;
   content: "";
-  background-image: url(/images/try_ice_cream3.png);
+  background-image: url(../images/try_ice_cream3.png);
   background-repeat: no-repeat;
   height: 168px;
   width: 168px;
@@ -583,10 +616,10 @@ body {
   z-index: 2;
 }
 
-.icecream-card-fifth::before {
+.icecream-card-fourth::before {
   position: absolute;
   content: "";
-  background-image: url(/images/try_ice_cream4.png);
+  background-image: url(../images/try_ice_cream4.png);
   background-repeat: no-repeat;
   height: 168px;
   width: 168px;
@@ -614,6 +647,9 @@ body {
   color: #FCFCFC;
   border: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pink-circle-button:hover {
@@ -751,7 +787,8 @@ body {
   line-height: 20px;
   font-weight: 700;
   border-radius: 26px;
-  padding: 12px 32px;
+  padding: 0 32px;
+  height: 50px;
   background-color: #FF2F64;
   color: #FFFFFF;
   border: 4px solid rgba(255, 47, 100, 0.3);
@@ -769,10 +806,12 @@ body {
 .button-pink:active {
   background-color: #FEAFC3;
   border: 2px solid #2D3440;
+  padding: 0 34px;
 }
 
 .button-pink:focus {
   border: 2px solid #2D3440;
+  padding: 0 34px;
 }
 
 .button-pink:focus-visible {
@@ -927,7 +966,15 @@ body {
 
 .contacts-button {
   width: 250px;
-  padding: 12px 28px;
+  padding: 0 20px;
+}
+
+.contacts-button:active {
+  padding: 0 20px;
+}
+
+.contacts-button:focus {
+  padding: 0 20px;
 }
 
 .footer-info, .footer-social-list {
@@ -981,24 +1028,18 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  padding: 8px 16px;
   border: 2px solid transparent;
 }
 
 .footer-link:hover {
-  background-color: rgba(252, 252, 252, 0.5);
-  border-radius: 30px;
-  border: 2px solid transparent;
+  opacity: 0.3;
 }
 
 .footer-link:active {
-  background-color: #FCFCFC;
-  border-radius: 30px;
-  border: 2px solid transparent;
+  opacity: 0.6;
 }
 
 .footer-link:focus {
-  background-color: rgba(252, 252, 252, 0.5);
   border-radius: 30px;
   border:  2px solid #2D3440;
   outline: none;
@@ -1007,18 +1048,14 @@ body {
 .footer-link-bold {
   font-weight: 700;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
-.footer-link-bold::before {
-  content: "";
+.heart {
   position: absolute;
-  background-image: url(/images/heart.svg);
-  background-repeat: no-repeat;
-  width: 14px;
-  height: 13px;
-  left: -10px;
   z-index: 2;
-  top: 9px;
+  left: -25px;
 }
 
 .html-logo {
@@ -1066,4 +1103,207 @@ body {
   border:  2px solid #2D3440;
   outline: none;
   border-radius: 30px;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(45, 52, 64, 0.3);
+  z-index: 2;
+}
+
+.modal-container-close {
+  display: none;
+}
+
+.modal-content {
+  margin: auto;
+  background-color: #FCFCFC;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+  padding: 64px 64px 107px 64px;
+  position: relative;
+}
+
+.modal-tytle {
+  margin: 0 0 32px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #2D3440;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  width: 442px;
+}
+
+.modal-field {
+  width: 422px;
+  margin: 0;
+  color: #B9B9B9;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.modal-text {
+  padding: 14px 0 115px 16px;
+  margin-bottom: 32px;
+}
+
+.modal-btn {
+  min-width: 152px;
+  position: absolute;
+  right: 64px;
+  bottom: 64px;
+}
+
+.catalog-menu {
+  margin-bottom: 40px;
+}
+
+.breadcrumb-link-active {
+  border-bottom: 1px solid #2D3440;
+}
+
+.filters {
+  margin-bottom: 95px;
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.form-label {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  display: flex;
+}
+
+.filter-first {
+  display: flex;
+}
+
+.filter-second {
+  display: flex;
+}
+
+.icecream-card-fifth::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/try_ice_cream5.png);
+  background-repeat: no-repeat;
+  height: 168px;
+  width: 168px;
+  top: -51px;
+  left: 48px;
+  z-index: 2;
+}
+
+.icecream-card-sixth::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/try_ice_cream6.png);
+  background-repeat: no-repeat;
+  height: 168px;
+  width: 168px;
+  top: -51px;
+  left: 48px;
+  z-index: 2;
+}
+
+.icecream-card-seventh:before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/try_ice_cream7.png);
+  background-repeat: no-repeat;
+  height: 168px;
+  width: 168px;
+  top: -51px;
+  left: 48px;
+  z-index: 2;
+}
+
+.icecream-card-eigth::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/try_ice_cream8.png);
+  background-repeat: no-repeat;
+  height: 168px;
+  width: 168px;
+  top: -51px;
+  left: 48px;
+  z-index: 2;
+}
+
+.icecream-card-ninth::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/try_ice_cream9.png);
+  background-repeat: no-repeat;
+  height: 168px;
+  width: 168px;
+  top: -51px;
+  left: 48px;
+  z-index: 2;
+}
+
+.icecream-card-tenth::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/try_ice_cream10.png);
+  background-repeat: no-repeat;
+  height: 168px;
+  width: 168px;
+  top: -51px;
+  left: 48px;
+  z-index: 2;
+}
+
+.icecream-card-eleventh::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/try_ice_cream11.png);
+  background-repeat: no-repeat;
+  height: 168px;
+  width: 168px;
+  top: -51px;
+  left: 48px;
+  z-index: 2;
+}
+
+.icecream-card-twelfth::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/try_ice_cream12.png);
+  background-repeat: no-repeat;
+  height: 168px;
+  width: 168px;
+  top: -51px;
+  left: 48px;
+  z-index: 2;
+}
+
+.try-icecream-lastshow {
+  margin-bottom: 57px;
+}
+
+.show-more {
+
 }
