@@ -116,16 +116,6 @@ body {
   outline: none;
 }
 
-.catalog {
-  justify-content: center;
-  display: flex;
-  align-items: center;
-}
-
-.catalog-arrow {
-  margin-left: 6px;
-}
-
 .navigation-right {
   display: flex;
   flex-wrap: wrap;
@@ -195,7 +185,6 @@ body {
   background-color: #FCFCFC;
   padding: 8px 16px;
   border-radius: 30px;
-
 }
 
 .navigation-left-link:focus {
@@ -203,6 +192,43 @@ body {
   border-radius: 30px;
   padding: 8px 16px;
   outline: none;
+}
+
+.catalog:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+  padding: 8px 38px 8px 16px;
+  border-radius: 30px;
+  border: 2px solid transparent;
+}
+
+.catalog:active {
+  background-color: #FCFCFC;
+  padding: 8px 38px 8px 16px;
+  border-radius: 30px;
+}
+
+.catalog:focus {
+  border: 2px solid #2D3440;
+  border-radius: 30px;
+  padding: 8px 38px 8px 16px;
+  outline: none;
+}
+
+.catalog {
+  padding: 8px 38px 8px 16px;
+  position: relative;
+}
+
+.catalog::after {
+  content: "";
+  position: absolute;
+  background-image: url(/images/catalog_arrow.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
+  width: 16px;
+  height: 16px;
+  right: 6px;
+  top: 16px;
 }
 
 .navigation-right-menu {
