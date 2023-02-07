@@ -78,6 +78,64 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  background-color: #FCFCFC;
+  border-radius: 4px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 48px;
+  top: 90px;
+  right: 0;
+}
+
+.delete {
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  padding: 0;
+}
+
+.tooltip-product {
+  display: flex;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.tooltip-img {
+  width: 46px;
+  height: 46px;
+  margin-right: 16px;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  margin: 0;
+}
+
+.product-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  color: #B9B9B9;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.tooltip-basket {
+  display: flex;
 }
 
 .navigation-left {
@@ -1362,8 +1420,4 @@ body {
 
 .try-icecream-lastshow {
   margin-bottom: 57px;
-}
-
-.show-more {
-
 }
