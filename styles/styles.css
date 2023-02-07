@@ -78,6 +78,64 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  background-color: #FCFCFC;
+  border-radius: 4px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 48px;
+  top: 90px;
+  right: 0;
+}
+
+.delete {
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  padding: 0;
+}
+
+.tooltip-product {
+  display: flex;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.tooltip-img {
+  width: 46px;
+  height: 46px;
+  margin-right: 16px;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  margin: 0;
+}
+
+.product-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  color: #B9B9B9;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.tooltip-basket {
+  display: flex;
 }
 
 .navigation-left {
@@ -1189,19 +1247,79 @@ body {
   font-weight: 700;
 }
 
+.breadcrumb-link:hover {
+  opacity: 0.3;
+}
+
+.breadcrumb-link:active {
+  opacity: 0.6;
+}
+
+.breadcrumb-link:focus {
+  border-bottom: 1px solid #2D3440;
+  outline: none;
+}
+
 .form-label {
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   display: flex;
+  flex-direction: column;
 }
 
 .filter-first {
   display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.select, .filer-field, .form-label-field {
+  border: none;
+  background-color: rgba(252, 252, 252, 0.3);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.fatness-field {
+  padding: 10px 24px;
 }
 
 .filter-second {
   display: flex;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.done {
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FCFCFC;
+  padding: 8px 52px;
+}
+
+.done:hover {
+  background-color: #FCFCFC;
+  border: 2px solid rgba(252, 252, 252, 0.3);
+}
+
+.done:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 2px solid transparent;
+  padding: 8px 52px;
+}
+
+.done:focus {
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid #2D3440;
+  padding: 8px 52px;
+}
+
+.done:disabled {
+  opacity: 0.4;
 }
 
 .icecream-card-fifth::before {
@@ -1302,8 +1420,4 @@ body {
 
 .try-icecream-lastshow {
   margin-bottom: 57px;
-}
-
-.show-more {
-
 }
