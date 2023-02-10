@@ -88,8 +88,24 @@
                 <option class="filer-field" value="new">cначала новое</option>
               </select>
             </label>
-            <label class="form-label" name="price" id="form-filters">Цена: 100 ₽ – 500 ₽
-              <input class="filer-field" type="range" min="50" max="1000" step="1" value="100" step="2" value="500">
+            <label class="form-label range-filter" name="price" id="form-filters">Цена: 100 ₽ – 500 ₽
+              <div class="range">
+                <span class="circle-first">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="8" cy="8" r="8" fill="#2D3440"/>
+                    <circle cx="8" cy="8" r="2" fill="#FCFCFC"/>
+                  </svg>
+                </span>
+                <span class="range-line"></span>
+                <span class="range-line-active"></span>
+                <span class="circle-second">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="8" cy="8" r="8" fill="#2D3440"/>
+                    <circle cx="8" cy="8" r="2" fill="#FCFCFC"/>
+                  </svg>
+                </span>
+              </div>
+              <input class="filer-field visually-hidden" type="range" min="50" max="1000" step="1" value="100" step="2" value="500">
             </label>
             <label class="form-label" name="fatness" id="form-filters">Жирность:
               <div class="form-label-field">
@@ -101,17 +117,31 @@
             </label>
           </div>
           <div class="filter-second">
-            <label class="form-label" name="flavors" id="form-filters">Наполнители:
-              <div class="form-label-field fatness-field">
-                <input class="fatness-filter" type="checkbox" name="chocolat" value="chocolat" checked>шоколадные
-                <input class="fatness-filter" type="checkbox" name="sugar" value="sugar" checked>сахарные посыпки
-                <input class="fatness-filter" type="checkbox" name="fruits" value="fruits">фрукты
-                <input class="fatness-filter" type="checkbox" name="sirops" value="sirops">сиропы
-                <input class="fatness-filter" type="checkbox" name="jam" value="jam">джемы
+            <p class="form-label">Наполнители</p>
+            <div class="flavors">
+              <div class="form-group">
+                <input class="fatness-filter" type="checkbox" name="chocolat" value="chocolat" checked>
+                <label class="form-label-flavors" name="flavors" id="form-filters">шоколадные</label>
               </div>
-            </label>
-            <button class="white-button done" type="submit">Применить</button>
+              <div class="form-group">
+                <input class="fatness-filter" type="checkbox" name="sugar" value="sugar" checked>
+                <label class="form-label-flavors" name="flavors" id="form-filters">сахарные посыпки</label>
+              </div>
+              <div class="form-group">
+                <input class="fatness-filter" type="checkbox" name="fruits" value="fruits">
+                <label class="form-label-flavors" name="flavors" id="form-filters">фрукты</label>
+              </div>
+              <div class="form-group">
+                <input class="fatness-filter" type="checkbox" name="sirops" value="sirops">
+                <label class="form-label-flavors" name="flavors" id="form-filters">сиропы</label>
+              </div>
+              <div class="form-group">
+                <input class="fatness-filter" type="checkbox" name="jam" value="jam">
+                <label class="form-label-flavors" name="flavors" id="form-filters">джемы</label>
+              </div>
+            </div>
           </div>
+          <button class="white-button done" type="submit">Применить</button>
         </form>
       </section>
 
