@@ -60,13 +60,51 @@
           </li>
         </ul>
 
-        <div class="tooltip">
+        <div class="tooltip-catalog tooltip-catalog-close">
+          <a class="undecorated-link new" href="#">Новинки</a>
+          <span class="line-catalog"></span>
+          <div class="icecream-list">
+            <a class="undecorated-link icecream-1" href="#">Сливочное</a>
+            <a class="undecorated-link icecream-2" href="#">Щербеты</a>
+            <a class="undecorated-link icecream-3" href="#">Фруктовый лед</a>
+            <a class="undecorated-link icecream-4" href="#">Мелорин</a>
+          </div>
+        </div>
+
+        <div class="tooltip-search tooltip-search-close">
+          <form class="search-cite" action="#" method="post">
+            <label class="visually-hidden" for="search-cite">Поиск по сайту</label>
+            <input class="field" required type="search" id="search-cite" name="search-cite" placeholder="Поиск по сайту">
+          </form>
+        </div>
+
+        <div class="personal-account personal-account-close">
+          <h3 class="third-title">Личный кабинет</h3>
+          <form class="account-form" action="#" method="post">
+            <label class="visually-hidden" for="account-form">Почта</label>
+            <input class="field field-email" required type="text" id="account-form" name="account-email" placeholder="email@example.com">
+            <label class="visually-hidden" for="account-form">Пароль</label>
+            <input class="field field-password" required type="password" id="account-form" name="password">
+            <div class="account-entrance">
+              <button class="button-pink">Войти</button>
+              <div class="forgot-password">
+                <a class="forgot-password-link" href="#">Забыли пароль?</a>
+                <a class="forgot-password-link" href="#">Регистрация</a>
+              </div>
+            </div>
+          </form>
+
+        </div>
+
+        <div class="tooltip tooltip-close">
           <h3 class="third-title">Корзина</h3>
           <div class="tooltip-product">
-            <img class="tooltip-img" src="/images/tooltip_img1.png" alt="Малинка">
-            <div class="product-name">
-              <h6 class="product-title">Малинка</h6>
-              <p class="product-description">1 кг х 310 ₽</p>
+            <div class="image-name">
+              <img class="tooltip-img" src="/images/tooltip_img1.png" alt="Малинка">
+              <div class="product-name">
+                <h6 class="product-title">Малинка</h6>
+                <p class="product-description">1 кг х 310 ₽</p>
+              </div>
             </div>
             <p class="price">310 ₽</p>
             <button class="delete" type="button">
@@ -77,10 +115,12 @@
           </div>
 
           <div class="tooltip-product">
-            <img class="tooltip-img" src="/images/tooltip_img2.png" alt="Бабл-гам">
-            <div class="product-name">
-              <h6 class="product-title">Бабл-гам</h6>
-              <p class="product-description">1,5 кг х 320 ₽</p>
+            <div class="image-name">
+              <img class="tooltip-img" src="/images/tooltip_img2.png" alt="Бабл-гам">
+              <div class="product-name">
+                <h6 class="product-title">Бабл-гам</h6>
+                <p class="product-description">1,5 кг х 320 ₽</p>
+              </div>
             </div>
             <p class="price">480 ₽</p>
             <button class="delete" type="button">
@@ -89,10 +129,15 @@
               </svg>
             </button>
           </div>
+          <span class="line"></span>
           <div class="tooltip-basket">
             <button class="button-pink" type="button">Оформить заказ</button>
             <p class="price">Итого: 790 ₽</p>
           </div>
+        </div>
+
+        <div class="basket-empty basket-empty-close">
+          <p class="basket-title">Ваша корзина пока<br>пуста</p>
         </div>
 
       </nav>
