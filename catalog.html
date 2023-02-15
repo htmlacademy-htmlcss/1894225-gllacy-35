@@ -2,8 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Каталог</title>
-    <link rel="stylesheet" href="./styles/styles.css"/>
+    <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body class="pink">
@@ -66,10 +68,10 @@
       <nav class="catalog-menu">
         <ul class="breadcrumb list-default-style-disabled">
           <li class="breadcrumb-item">
-            <a class="breadcrumb-link undecorated-link" href="/index.html">Главная</a>
+            <a class="breadcrumb-link breadcrumb-link-arrow undecorated-link" href="/index.html">Главная</a>
           </li>
           <li class="breadcrumb-item">
-            <a class="breadcrumb-link undecorated-link" href="#">Каталог</a>
+            <a class="breadcrumb-link breadcrumb-link-arrow undecorated-link" href="#">Каталог</a>
           </li>
           <li class="breadcrumb-item">
             <a class="breadcrumb-link breadcrumb-link-active undecorated-link" href="#">Сливочное мороженое</a>
@@ -81,7 +83,7 @@
       <section class="filters">
         <form class="form-filters" method="post" action="#">
           <div class="filter-first">
-            <label class="form-label">Сортировка
+            <label class="form-label" for="form-filters">Сортировка
               <select class="select" name="filters-select" id="form-filters">
                 <option class="filer-field" value="popular">по популярности</option>
                 <option class="filer-field" value="old">cначала старое</option>
@@ -107,41 +109,57 @@
               </div>
               <input class="filer-field visually-hidden" type="range" min="50" max="1000" step="1" value="100" step="2" value="500">
             </label>
-            <label class="form-label" name="fatness" id="form-filters">Жирность:
-              <div class="form-label-field">
-                <input class="filer-field" type="radio" name="first" value="0%">0%
-                <input class="filer-field" type="radio" name="second" value="10%" checked>до 10%
-                <input class="filer-field" type="radio" name="third" value="30%">до 30%
-                <input class="filer-field" type="radio" name="fourth" value="30% more">выше 30%
-              </div>
-            </label>
-          </div>
-          <div class="filter-second">
-            <p class="form-label">Наполнители</p>
-            <div class="flavors">
-              <div class="form-group">
-                <input class="fatness-filter" type="checkbox" name="chocolat" value="chocolat" checked>
-                <label class="form-label-flavors" name="flavors" id="form-filters">шоколадные</label>
-              </div>
-              <div class="form-group">
-                <input class="fatness-filter" type="checkbox" name="sugar" value="sugar" checked>
-                <label class="form-label-flavors" name="flavors" id="form-filters">сахарные посыпки</label>
-              </div>
-              <div class="form-group">
-                <input class="fatness-filter" type="checkbox" name="fruits" value="fruits">
-                <label class="form-label-flavors" name="flavors" id="form-filters">фрукты</label>
-              </div>
-              <div class="form-group">
-                <input class="fatness-filter" type="checkbox" name="sirops" value="sirops">
-                <label class="form-label-flavors" name="flavors" id="form-filters">сиропы</label>
-              </div>
-              <div class="form-group">
-                <input class="fatness-filter" type="checkbox" name="jam" value="jam">
-                <label class="form-label-flavors" name="flavors" id="form-filters">джемы</label>
+            <div>
+              <p class="form-label">Жирность:</p>
+              <div class="fatness">
+                <div class="form-group-fat">
+                  <input class="fatness-filter" type="radio" id="first" value="0%">
+                  <label class="form-label-fatness" for="first">0%</label>
+                </div>
+                <div class="form-group-fat">
+                  <input class="filer-field" type="radio" id="second" value="10%" checked>
+                  <label class="form-label-fatness" for="second">до 10%</label>
+                </div>
+                <div class="form-group-fat">
+                  <input class="filer-field" type="radio" id="third" value="30%">
+                  <label class="form-label-fatness" for="third">до 30%</label>
+                </div>
+                <div class="form-group-fat">
+                  <input class="filer-field" type="radio" id="fourth" value="30% more">
+                  <label class="form-label-fatness" for="fourth">выше 30%</label>
+                </div>
               </div>
             </div>
           </div>
-          <button class="white-button done" type="submit">Применить</button>
+          <div class="filter-second">
+            <div>
+            <p class="form-label">Наполнители:</p>
+            <div class="flavors">
+              <div class="form-group">
+                <input class="fillers-filter" type="checkbox" id="chocolat" value="chocolat" checked>
+                <label class="form-label-flavors" for="chocolat">шоколадные</label>
+              </div>
+              <div class="form-group">
+                <input class="fillers-filter" type="checkbox" id="sugar" value="sugar" checked>
+                <label class="form-label-flavors" for="sugar">сахарные посыпки</label>
+              </div>
+              <div class="form-group">
+                <input class="fillers-filter" type="checkbox" id="fruits" value="fruits">
+                <label class="form-label-flavors" for="fruits">фрукты</label>
+              </div>
+              <div class="form-group">
+                <input class="fillers-filter" type="checkbox" id="sirops" value="sirops">
+                <label class="form-label-flavors" for="sirops">сиропы</label>
+              </div>
+              <div class="form-group">
+                <input class="fillers-filter" type="checkbox" id="jam" value="jam">
+                <label class="form-label-flavors" for="jam">джемы</label>
+              </div>
+            </div>
+          </div>
+            <button class="white-button done" type="submit">Применить</button>
+          </div>
+
         </form>
       </section>
 
