@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" href="./styles/styles.css"/>
-    <link rel="icon" href=""/>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
+
   <body class="pink">
     <header class="page-header main-container">
       <nav class="navigation">
@@ -34,7 +36,7 @@
         </ul>
         <ul class="navigation-right list-default-style-disabled">
           <li class="phone">
-            <a class="phone-number undecorated-link" href="#">800 555-86-28</a>
+            <a class="phone-number undecorated-link" href="#">+7 800 555-86-28</a>
             </li>
           <li class="navigation-right-menu-search">
             <a class="navigation-right-link search" href="#">
@@ -81,10 +83,10 @@
         <div class="personal-account personal-account-close">
           <h3 class="third-title">Личный кабинет</h3>
           <form class="account-form" action="#" method="post">
-            <label class="visually-hidden" for="account-form">Почта</label>
-            <input class="field field-email" required type="text" id="account-form" name="account-email" placeholder="email@example.com">
-            <label class="visually-hidden" for="account-form">Пароль</label>
-            <input class="field field-password" required type="password" id="account-form" name="password">
+            <label class="visually-hidden" for="account-email">Почта</label>
+            <input class="field field-email" required type="text" id="account-email" name="account-email" placeholder="email@example.com">
+            <label class="visually-hidden" for="password">Пароль</label>
+            <input class="field field-password" required type="password" id="password" name="password">
             <div class="account-entrance">
               <button class="button-pink">Войти</button>
               <div class="forgot-password">
@@ -100,7 +102,7 @@
           <h3 class="third-title">Корзина</h3>
           <div class="tooltip-product">
             <div class="image-name">
-              <img class="tooltip-img" src="/images/tooltip_img1.png" alt="Малинка">
+              <img class="tooltip-img" src="/images/tooltip_img1.png" alt="Малинка" width="46" height="46">
               <div class="product-name">
                 <h6 class="product-title">Малинка</h6>
                 <p class="product-description">1 кг х 310 ₽</p>
@@ -116,7 +118,7 @@
 
           <div class="tooltip-product">
             <div class="image-name">
-              <img class="tooltip-img" src="/images/tooltip_img2.png" alt="Бабл-гам">
+              <img class="tooltip-img" src="/images/tooltip_img2.png" alt="Бабл-гам" width="46" height="46">
               <div class="product-name">
                 <h6 class="product-title">Бабл-гам</h6>
                 <p class="product-description">1,5 кг х 320 ₽</p>
@@ -146,11 +148,11 @@
     <main class="main-container">
       <section class="main-screen main-screen-active">
         <div class="main-screen-left">
-          <h1 class="main-title">Нежный пломбир с клубничным джемом</h1>
-          <p class="main-screen-text">Натуральное мороженое из свежих сливок
+          <h1 class="main-title">Нежный пломбир <br> с  клубничным джемом</h1>
+          <p class="main-screen-text">Натуральное мороженое из свежих сливок<br>
             и молока с вкуснейшим клубничным джемом –<br> это идеальный десерт для всей семьи.
           </p>
-          <button class="white-button" type="button">Заказать</button>
+          <button class="white-button white-button-first" type="button">Заказать</button>
           <ol class="main-pagination list-default-style-disabled">
             <li class="pagination-item">
               <button class="pagination-button pagination-button-current" type="button">
@@ -178,7 +180,7 @@
               <span class="visually-hidden">Предыдущее фото</span>
             </button>
             <div class="main-photo">
-              <img class="big-ice-cream" src="/images/red_ice_cream_big.png" width="306" height="507" alt="Пломбир с клубничным джемом">
+              <img class="big-ice-cream" src="images/red_ice_cream_big.png" width="306" height="507" alt="Пломбир с клубничным джемом">
             </div>
             <button class="main-screen-arrow slider-next" type="button">
               <svg class="main-arrow next" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -188,10 +190,10 @@
             </button>
           </div>
           <div class="mini-ice-cream">
-            <img class="small-ice-cream" src="/images/yellow_ice_cream_small.png">
+            <img class="small-ice-cream" src="images/yellow_ice_cream_small.png" alt="Мороженое" width="66" height="150">
           </div>
           <div class="mini-ice-cream">
-            <img class="small-ice-cream" src="/images/pink_ice_cream_small.png">
+            <img class="small-ice-cream" src="images/pink_ice_cream_small.png" alt="Мороженое" width="66" height="150">
           </div>
         </div>
         <ul class="social-media list-default-style-disabled">
@@ -223,19 +225,19 @@
       </section>
       <section class="main-screen main-screen-close">
         <div class="main-screen-left">
-          <h1 class="main-title">Сливочное морожение со вкусом банана</h1>
-          <p class="main-screen-text">Сливочное мороженое с ярким банановым
-            вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.
+          <h1 class="main-title">Сливочное морожение<br>со вкусом банана</h1>
+          <p class="main-screen-text">Сливочное мороженое с ярким банановым<br>
+            вкусом подарит вам свежесть и наслаждение<br>даже в самый жаркий летний день.
           </p>
-          <button class="white-button" type="button">Заказать</button>
+          <button class="white-button white-button-first" type="button">Заказать</button>
           <ol class="main-pagination list-default-style-disabled">
             <li class="pagination-item">
-              <button class="pagination-button" type="button">
+              <button class="pagination-button pagination-button-current" type="button">
                 <span class="visually-hidden">1 слайд</span>
               </button>
             </li>
             <li class="pagination-item">
-              <button class="pagination-button pagination-button-current" type="button">
+              <button class="pagination-button" type="button">
                 <span class="visually-hidden">2 слайд</span>
               </button>
             </li>
@@ -257,8 +259,8 @@
             </button>
           </div>
           <div class="mini-ice-cream">
-            <img class="small-ice-cream" src="/images/pink_ice_cream_small.png">
-            <img class="small-ice-cream" src="/images/red_ice_cream_small.png">
+            <img class="small-ice-cream" src="/images/pink_ice_cream_small.png" alt="Мороженое" width="66" height="150">
+            <img class="small-ice-cream" src="/images/red_ice_cream_small.png" alt="Мороженое" width="66" height="150">
           </div>
           <ul class="social-media list-default-style-disabled">
             <li class="social-media-list">
@@ -290,13 +292,13 @@
       </section>
       <section class="main-screen main-screen-close">
         <div class="main-screen-left">
-          <h1 class="main-title">Карамельный пломбир с маршмеллоу</h1>
-          <p class="main-screen-text">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.
+          <h1 class="main-title">Карамельный пломбир<br>с маршмеллоу</h1>
+          <p class="main-screen-text">Необычный сладкий десерт с карамельным<br>топпингом и кусочками зефира завоюет<br>сердца сладкоежек всех возрастов.
           </p>
-          <button class="white-button" type="button">Заказать</button>
+          <button class="white-button white-button-first" type="button">Заказать</button>
           <ol class="main-pagination list-default-style-disabled">
             <li class="pagination-item">
-              <button class="pagination-button" type="button">
+              <button class="pagination-button pagination-button-current" type="button">
                 <span class="visually-hidden">1 слайд</span>
               </button>
             </li>
@@ -306,7 +308,7 @@
               </button>
             </li>
             <li class="pagination-item">
-              <button class="pagination-button pagination-button-current" type="button">
+              <button class="pagination-button" type="button">
                 <span class="visually-hidden">3 слайд</span>
               </button>
             </li>
@@ -323,8 +325,8 @@
             </button>
           </div>
           <div class="mini-ice-cream">
-            <img class="small-ice-cream" src="/images/red_ice_cream_small.png">
-            <img class="small-ice-cream" src="/images/yellow_ice_cream_small.png">
+            <img class="small-ice-cream" src="/images/red_ice_cream_small.png" alt="Мороженое" width="66" height="150">
+            <img class="small-ice-cream" src="/images/yellow_ice_cream_small.png" alt="Мороженое" width="66" height="150">
           </div>
           <ul class="social-media list-default-style-disabled">
             <li class="social-media-list">
@@ -373,10 +375,10 @@
         <h2 class="second-title try-title-text">Попробуйте самые популярные<br>вкусы нашего мороженого</h2>
         <ul class="try-icecream list-default-style-disabled">
           <li class="icecream-card icecream-card-first">
-            <h4 class="fourth-title">Малинка</h3>
+            <h4 class="fourth-title">Малинка</h4>
             <p class="main-text try-text">Сливочное мороженое<br>с малиновым джемом</p>
             <div class="try-price">
-              <p class="fourth-title icecream-price">310₽/кг</p>
+              <p class="fourth-title icecream-price">310 ₽/кг</p>
               <button class="pink-circle-button">
                 <svg class="cart" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.16667 1.25C0.798477 1.25 0.5 1.54848 0.5 1.91667C0.5 2.28486 0.798477 2.58333 1.16667 2.58333H2.93794L3.40537 4.91872C3.40821 4.93667 3.41176 4.95438 3.416 4.97182L4.38338 9.80515L4.3835 9.80571C4.46706 10.2257 4.69562 10.603 5.02921 10.8715C5.36111 11.1387 5.77595 11.2813 6.20183 11.2748H11.8225C12.2484 11.2813 12.6633 11.1387 12.9952 10.8715C13.3289 10.6029 13.5575 10.2254 13.641 9.80515L13.641 9.80515L13.642 9.80016L14.5691 4.93872C14.6063 4.74355 14.5545 4.54195 14.4279 4.38887C14.3012 4.23578 14.1129 4.14716 13.9142 4.14716H4.61072L4.1381 1.78583C4.07574 1.47426 3.80215 1.25 3.4844 1.25H1.16667ZM5.69098 9.54444L4.87759 5.4805H13.1084L12.3328 9.54736C12.31 9.65988 12.2485 9.7609 12.1591 9.83291C12.0691 9.90535 11.9565 9.94383 11.841 9.94162L11.841 9.94149H11.8282H6.19614V9.94137L6.18337 9.94162C6.06787 9.94383 5.95528 9.90535 5.8653 9.83291C5.77531 9.76048 5.71368 9.6587 5.69117 9.5454L5.69098 9.54444ZM4.55739 13.5054C4.55739 12.8175 5.1151 12.2597 5.80307 12.2597C6.49105 12.2597 7.04876 12.8175 7.04876 13.5054C7.04876 14.1934 6.49105 14.7511 5.80307 14.7511C5.1151 14.7511 4.55739 14.1934 4.55739 13.5054ZM10.9307 13.5054C10.9307 12.8175 11.4884 12.2597 12.1764 12.2597C12.8644 12.2597 13.4221 12.8175 13.4221 13.5054C13.4221 14.1934 12.8644 14.7511 12.1764 14.7511C11.4884 14.7511 10.9307 14.1934 10.9307 13.5054Z" fill="currentColor"/>
@@ -385,10 +387,10 @@
             </div>
           </li>
           <li class="icecream-card icecream-card-second">
-            <h4 class="fourth-title">Фисташка</h3>
+            <h4 class="fourth-title">Фисташка</h4>
             <p class="main-text try-text">Фисташковый пломбир<br>с кусочками шоколада</p>
             <div class="try-price">
-              <p class="fourth-title icecream-price">340₽/кг</p>
+              <p class="fourth-title icecream-price">340 ₽/кг</p>
               <button class="pink-circle-button">
                 <svg class="cart" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.16667 1.25C0.798477 1.25 0.5 1.54848 0.5 1.91667C0.5 2.28486 0.798477 2.58333 1.16667 2.58333H2.93794L3.40537 4.91872C3.40821 4.93667 3.41176 4.95438 3.416 4.97182L4.38338 9.80515L4.3835 9.80571C4.46706 10.2257 4.69562 10.603 5.02921 10.8715C5.36111 11.1387 5.77595 11.2813 6.20183 11.2748H11.8225C12.2484 11.2813 12.6633 11.1387 12.9952 10.8715C13.3289 10.6029 13.5575 10.2254 13.641 9.80515L13.641 9.80515L13.642 9.80016L14.5691 4.93872C14.6063 4.74355 14.5545 4.54195 14.4279 4.38887C14.3012 4.23578 14.1129 4.14716 13.9142 4.14716H4.61072L4.1381 1.78583C4.07574 1.47426 3.80215 1.25 3.4844 1.25H1.16667ZM5.69098 9.54444L4.87759 5.4805H13.1084L12.3328 9.54736C12.31 9.65988 12.2485 9.7609 12.1591 9.83291C12.0691 9.90535 11.9565 9.94383 11.841 9.94162L11.841 9.94149H11.8282H6.19614V9.94137L6.18337 9.94162C6.06787 9.94383 5.95528 9.90535 5.8653 9.83291C5.77531 9.76048 5.71368 9.6587 5.69117 9.5454L5.69098 9.54444ZM4.55739 13.5054C4.55739 12.8175 5.1151 12.2597 5.80307 12.2597C6.49105 12.2597 7.04876 12.8175 7.04876 13.5054C7.04876 14.1934 6.49105 14.7511 5.80307 14.7511C5.1151 14.7511 4.55739 14.1934 4.55739 13.5054ZM10.9307 13.5054C10.9307 12.8175 11.4884 12.2597 12.1764 12.2597C12.8644 12.2597 13.4221 12.8175 13.4221 13.5054C13.4221 14.1934 12.8644 14.7511 12.1764 14.7511C11.4884 14.7511 10.9307 14.1934 10.9307 13.5054Z" fill="currentColor"/>
@@ -397,10 +399,10 @@
             </div>
           </li>
           <li class="icecream-card icecream-card-third">
-            <h4 class="fourth-title">Черника</h3>
+            <h4 class="fourth-title">Черника</h4>
             <p class="main-text try-text">Крем-брюле<br>с черничным джемом</p>
             <div class="try-price">
-              <p class="fourth-title icecream-price">330₽/кг</p>
+              <p class="fourth-title icecream-price">330 ₽/кг</p>
               <button class="pink-circle-button">
                 <svg class="cart" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.16667 1.25C0.798477 1.25 0.5 1.54848 0.5 1.91667C0.5 2.28486 0.798477 2.58333 1.16667 2.58333H2.93794L3.40537 4.91872C3.40821 4.93667 3.41176 4.95438 3.416 4.97182L4.38338 9.80515L4.3835 9.80571C4.46706 10.2257 4.69562 10.603 5.02921 10.8715C5.36111 11.1387 5.77595 11.2813 6.20183 11.2748H11.8225C12.2484 11.2813 12.6633 11.1387 12.9952 10.8715C13.3289 10.6029 13.5575 10.2254 13.641 9.80515L13.641 9.80515L13.642 9.80016L14.5691 4.93872C14.6063 4.74355 14.5545 4.54195 14.4279 4.38887C14.3012 4.23578 14.1129 4.14716 13.9142 4.14716H4.61072L4.1381 1.78583C4.07574 1.47426 3.80215 1.25 3.4844 1.25H1.16667ZM5.69098 9.54444L4.87759 5.4805H13.1084L12.3328 9.54736C12.31 9.65988 12.2485 9.7609 12.1591 9.83291C12.0691 9.90535 11.9565 9.94383 11.841 9.94162L11.841 9.94149H11.8282H6.19614V9.94137L6.18337 9.94162C6.06787 9.94383 5.95528 9.90535 5.8653 9.83291C5.77531 9.76048 5.71368 9.6587 5.69117 9.5454L5.69098 9.54444ZM4.55739 13.5054C4.55739 12.8175 5.1151 12.2597 5.80307 12.2597C6.49105 12.2597 7.04876 12.8175 7.04876 13.5054C7.04876 14.1934 6.49105 14.7511 5.80307 14.7511C5.1151 14.7511 4.55739 14.1934 4.55739 13.5054ZM10.9307 13.5054C10.9307 12.8175 11.4884 12.2597 12.1764 12.2597C12.8644 12.2597 13.4221 12.8175 13.4221 13.5054C13.4221 14.1934 12.8644 14.7511 12.1764 14.7511C11.4884 14.7511 10.9307 14.1934 10.9307 13.5054Z" fill="currentColor"/>
@@ -409,10 +411,10 @@
             </div>
           </li>
           <li class="icecream-card icecream-card-fourth">
-            <h4 class="fourth-title">Бабл-гам</h3>
+            <h4 class="fourth-title">Бабл-гам</h4>
             <p class="main-text try-text">Ванильный пломбир<br>со сладкой посыпкой</p>
             <div class="try-price">
-              <p class="fourth-title icecream-price">320₽/кг</p>
+              <p class="fourth-title icecream-price">320 ₽/кг</p>
               <button class="pink-circle-button">
                 <svg class="cart" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.16667 1.25C0.798477 1.25 0.5 1.54848 0.5 1.91667C0.5 2.28486 0.798477 2.58333 1.16667 2.58333H2.93794L3.40537 4.91872C3.40821 4.93667 3.41176 4.95438 3.416 4.97182L4.38338 9.80515L4.3835 9.80571C4.46706 10.2257 4.69562 10.603 5.02921 10.8715C5.36111 11.1387 5.77595 11.2813 6.20183 11.2748H11.8225C12.2484 11.2813 12.6633 11.1387 12.9952 10.8715C13.3289 10.6029 13.5575 10.2254 13.641 9.80515L13.641 9.80515L13.642 9.80016L14.5691 4.93872C14.6063 4.74355 14.5545 4.54195 14.4279 4.38887C14.3012 4.23578 14.1129 4.14716 13.9142 4.14716H4.61072L4.1381 1.78583C4.07574 1.47426 3.80215 1.25 3.4844 1.25H1.16667ZM5.69098 9.54444L4.87759 5.4805H13.1084L12.3328 9.54736C12.31 9.65988 12.2485 9.7609 12.1591 9.83291C12.0691 9.90535 11.9565 9.94383 11.841 9.94162L11.841 9.94149H11.8282H6.19614V9.94137L6.18337 9.94162C6.06787 9.94383 5.95528 9.90535 5.8653 9.83291C5.77531 9.76048 5.71368 9.6587 5.69117 9.5454L5.69098 9.54444ZM4.55739 13.5054C4.55739 12.8175 5.1151 12.2597 5.80307 12.2597C6.49105 12.2597 7.04876 12.8175 7.04876 13.5054C7.04876 14.1934 6.49105 14.7511 5.80307 14.7511C5.1151 14.7511 4.55739 14.1934 4.55739 13.5054ZM10.9307 13.5054C10.9307 12.8175 11.4884 12.2597 12.1764 12.2597C12.8644 12.2597 13.4221 12.8175 13.4221 13.5054C13.4221 14.1934 12.8644 14.7511 12.1764 14.7511C11.4884 14.7511 10.9307 14.1934 10.9307 13.5054Z" fill="currentColor"/>
@@ -444,7 +446,7 @@
               в курсе всего самого вкусного, что у нас происходит. Обещаем<br>не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form class="sign-up" action="#" method="post">
               <label class="sign-up-form" for="email">
-              <input class="field" placeholder="email@example.com" type="email" name="email" id="email" required>
+              <input class="field sign-up-field" placeholder="email@example.com" type="email" name="email" id="email" required>
               </label>
               <button class="button-pink" type="submit">Отправить</button>
             </form>
@@ -460,15 +462,15 @@
           <p class="main-text delivery-action-text">Укажите адрес и дату доставки, и мы свяжемся<br>с вами, чтобы подтвердить заказ.</p>
           <form class="delivery-form" action="#" method="post">
             <div class="date-phone">
-              <label class="date-field-text" for="delivery-form">Дата
-                <input class="field date-field" required type="number" id="delivery-form" name="date-form" placeholder="01.04.2020">
+              <label class="date-field-text" for="date-form">Дата
+                <input class="field date-field" required type="number" id="date-form" name="date-form" placeholder="01.04.2020">
               </label>
-              <label class="phone-field-text" for="delivery-form">Телефон
-                <input class="field phone-field" required type="number" id="delivery-form" name="phone-form" placeholder="+7 800 999-00-00">
+              <label class="phone-field-text" for="phone-form">Телефон
+                <input class="field phone-field" required type="tel" id="phone-form" name="phone-form" placeholder="+7 800 999-00-00">
               </label>
             </div>
-            <label class="address-field-text" for="delivery-form">Адрес
-              <input class="field address-field" required type="text" id="delivery-form" name="adress-form" placeholder="ул. Большая Конюшенная, 19/8">
+            <label class="address-field-text" for="adress-form">Адрес
+              <input class="field address-field" required type="text" id="adress-form" name="adress-form" placeholder="ул. Большая Конюшенная, 19/8">
             </label>
             <button class="button-pink" type="submit">Отправить</button>
           </form>
@@ -477,7 +479,7 @@
       <section class="contacts">
         <div class="contacts-info">
           <p class="main-text contacts-text">Адрес главного офиса<br>и офлайн-магазина</p>
-          <h4 class="address">наб. реки Карповки,<br>5 лит П, Санкт-Петербург</h3>
+          <h4 class="address">наб. реки Карповки,<br>5 лит П, Санкт-Петербург</h4>
           <p class="main-text contacts-text">Для заказов по телефону:</p>
           <h4 class="fourth-title fourth-title-text">+7 (812) 812-12-12</h4>
           <p class="small-text">(с 10 до 20 ежедневно)</p>
@@ -561,7 +563,7 @@
 
     <div class="modal-container modal-container-close">
       <button class="modal-button" type="button">
-        <svg class="close"width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="close" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8858 5.05482C16.1461 4.79447 16.1461 4.37236 15.8858 4.11201C15.6254 3.85166 15.2033 3.85166 14.943 4.11201L9.99877 9.0562L5.05458 4.11201C4.79423 3.85166 4.37212 3.85166 4.11177 4.11201C3.85142 4.37236 3.85142 4.79447 4.11177 5.05482L9.05596 9.99901L4.11177 14.9432C3.85142 15.2036 3.85142 15.6257 4.11177 15.886C4.37212 16.1464 4.79423 16.1464 5.05458 15.886L9.99877 10.9418L14.943 15.886C15.2033 16.1464 15.6254 16.1464 15.8858 15.886C16.1461 15.6257 16.1461 15.2036 15.8858 14.9432L10.9416 9.99901L15.8858 5.05482Z" fill="#2D3440"/>
         </svg>
       </button>
@@ -571,11 +573,11 @@
           <label class="modal-form-field" for="modal-form">
             <input class="modal-field field" required type="text" id="modal-form" name="name" placeholder="Имя и фамилия">
           </label>
-          <label class="modal-form-field" for="modal-form">
-            <input class="modal-field field" required type="text" id="modal-form" name="email" placeholder="email@example.com">
+          <label class="modal-form-field" for="email-form">
+            <input class="modal-field field" required type="text" id="email-form" name="email" placeholder="email@example.com">
           </label>
-          <label class="modal-form-field" for="modal-form">
-            <input class="modal-field field modal-text" required type="text" id="modal-form" name="comment" placeholder="В свободной форме">
+          <label class="modal-form-field" for="comment">
+            <input class="modal-field field modal-text" required type="text" id="comment" name="comment" placeholder="В свободной форме">
           </label>
           <button class="button-pink modal-btn" type="button">Отправить</button>
         </form>
