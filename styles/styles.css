@@ -306,17 +306,17 @@ body {
 .navigation-right {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 15px;
   padding-left: 0;
   align-items: center;
   margin-top: 12px;
-  width: 440px;
 }
 
 .navigation-right-menu-search {
   display: flex;
   width: 32px;
   height: 32px;
+  margin-right: 4px;
 }
 
 .search {
@@ -342,6 +342,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 30px;
+  font-size: 14px;
 }
 
 .navigation-right-link:hover {
@@ -1323,7 +1324,7 @@ body {
   flex-direction: column;
   border-radius: 8px;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
-  padding: 64px 64px 107px 64px;
+  padding: 64px 64px 0 64px;
   position: relative;
 }
 
@@ -1342,7 +1343,7 @@ body {
 }
 
 .modal-field {
-  width: 422px;
+  width: 442px;
   margin: 0;
   color: #B9B9B9;
   font-size: 16px;
@@ -1352,8 +1353,8 @@ body {
 }
 
 .modal-text {
-  padding: 14px 0 115px 16px;
-  margin-bottom: 32px;
+  padding: 14px 0 132px 16px;
+  margin-bottom: 123px;
 }
 
 .modal-btn {
@@ -1430,6 +1431,7 @@ body {
   font-weight: 400;
   display: flex;
   flex-direction: column;
+  margin-left: 16px;
 }
 
 .filter-first {
@@ -1451,6 +1453,26 @@ body {
 
 .select {
   width: 195px;
+  margin-left: -16px;
+  color: #2D3440;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.select-before {
+  position: relative;
+}
+
+.select-before::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-image: url(../images/select_arrow.svg);
+  background-repeat: no-repeat;
+  top: 44px;
+  left: 153px;
 }
 
 .range-filter {
@@ -1509,7 +1531,7 @@ body {
   background-color: rgba(252, 252, 252, 0.3);
   padding: 8px 24px;
   border-radius: 18px;
-  width: 621px;
+  gap: 16px;
 }
 
 .filter-second p {
@@ -1518,6 +1540,7 @@ body {
 
 .filter-first p {
   margin: 0 0 4px 0;
+  padding-left: 16px;
 }
 
 .fatness {
@@ -1527,11 +1550,12 @@ body {
   padding: 8px 24px;
   border-radius: 18px;
   margin-top: 5px;
+  gap: 17px;
 }
 
 .form-group, .form-group-fat {
   display: flex;
-  margin-right: 16px;
+  font-size: 14px;
 }
 
 .form-group-fat input {
@@ -1610,9 +1634,9 @@ body {
 .done {
   background-color: rgba(252, 252, 252, 0.3);
   outline: 2px solid #FCFCFC;
-  padding: 8px 52px;
+  padding: 8px 48px;
   height: fit-content;
-  margin-left: 16px;
+  margin-left: 21px;
 }
 
 .done:hover {
