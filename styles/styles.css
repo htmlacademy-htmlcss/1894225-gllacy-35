@@ -35,7 +35,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
-  color: #2D3440;
+  color: #2d3440;
 }
 
 .pink {
@@ -57,7 +57,7 @@ body {
 
 .undecorated-link {
   text-decoration: none;
-  color: #2D3440;
+  color: #2d3440;
 }
 
 .visually-hidden {
@@ -123,7 +123,7 @@ body {
   background-color: #fcfcfc;
   border-radius: 4px;
   z-index: 2;
-  padding: 23px 24px;
+  padding: 23px 17px;
   top: 76px;
   left: 579px;
 }
@@ -152,6 +152,7 @@ body {
 .forgot-password {
   display: flex;
   flex-direction: column;
+  margin-top: 2px;
 }
 
 .account-entrance {
@@ -164,6 +165,7 @@ body {
   font-weight: 400;
   line-height: 20px;
   color: #2d3440;
+  margin-top: 1px;
 }
 
 .tooltip {
@@ -852,7 +854,7 @@ body {
 .shop-text {
   background-color: #ffffff;
   border-radius: 16px;
-  padding: 56px 40px;
+  padding: 56px 40px 16px;
 }
 
 .shop-text-description {
@@ -1017,7 +1019,6 @@ body {
   background-clip: padding-box;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-
 }
 
 .field-email,
@@ -1028,6 +1029,10 @@ body {
 
 .field-password {
   margin: 0 0 32px 0;
+}
+
+.search-field {
+  width:  323px;
 }
 
 .sign-up-field {
@@ -1143,7 +1148,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 304px;
-  padding: 40px 0 40px 40px;
+  padding: 40px 0 44px 40px;
 }
 
 .fourth-title-text {
@@ -1158,7 +1163,7 @@ body {
 }
 
 .contacts-text {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   width: 212px;
 }
 
@@ -1181,7 +1186,7 @@ body {
 }
 
 .footer-info {
-  padding: 48px 3px 48px 4px;
+  padding: 46px 3px 48px 4px;
   align-items: start;
 }
 
@@ -1692,110 +1697,14 @@ body {
   opacity: 0.4;
 }
 
-.icecream-card-fifth::before {
-  position: absolute;
-  content: "";
-  background-image: url(../images/try_ice_cream5.png);
-  background-repeat: no-repeat;
-  height: 168px;
-  width: 168px;
-  top: -51px;
-  left: 48px;
-  z-index: 2;
-}
-
-.icecream-card-sixth::before {
-  position: absolute;
-  content: "";
-  background-image: url(../images/try_ice_cream6.png);
-  background-repeat: no-repeat;
-  height: 168px;
-  width: 168px;
-  top: -51px;
-  left: 48px;
-  z-index: 2;
-}
-
-.icecream-card-seventh::before {
-  position: absolute;
-  content: "";
-  background-image: url(../images/try_ice_cream7.png);
-  background-repeat: no-repeat;
-  height: 168px;
-  width: 168px;
-  top: -51px;
-  left: 48px;
-  z-index: 2;
-}
-
-.icecream-card-eigth::before {
-  position: absolute;
-  content: "";
-  background-image: url(../images/try_ice_cream8.png);
-  background-repeat: no-repeat;
-  height: 168px;
-  width: 168px;
-  top: -51px;
-  left: 48px;
-  z-index: 2;
-}
-
-.icecream-card-ninth::before {
-  position: absolute;
-  content: "";
-  background-image: url(../images/try_ice_cream9.png);
-  background-repeat: no-repeat;
-  height: 168px;
-  width: 168px;
-  top: -51px;
-  left: 48px;
-  z-index: 2;
-}
-
-.icecream-card-tenth::before {
-  position: absolute;
-  content: "";
-  background-image: url(../images/try_ice_cream10.png);
-  background-repeat: no-repeat;
-  height: 168px;
-  width: 168px;
-  top: -51px;
-  left: 48px;
-  z-index: 2;
-}
-
-.icecream-card-eleventh::before {
-  position: absolute;
-  content: "";
-  background-image: url(../images/try_ice_cream11.png);
-  background-repeat: no-repeat;
-  height: 168px;
-  width: 168px;
-  top: -51px;
-  left: 48px;
-  z-index: 2;
-}
-
-.icecream-card-twelfth::before {
-  position: absolute;
-  content: "";
-  background-image: url(../images/try_ice_cream12.png);
-  background-repeat: no-repeat;
-  height: 168px;
-  width: 168px;
-  top: -51px;
-  left: 48px;
-  z-index: 2;
-}
-
 .try-icecream-lastshow {
   margin-bottom: -34px;
 }
 
 .show-more {
-  text-align: center;
   margin-bottom: 79px;
   position: relative;
+  padding: 0 488px;
 }
 
 .pagination-catalog {
